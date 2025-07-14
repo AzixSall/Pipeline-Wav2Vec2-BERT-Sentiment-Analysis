@@ -5,18 +5,8 @@ import re
 
 class Wav2VecBERTPipeline:
     def __init__(self, 
-                 wav2vec_model="facebook/wav2vec2-large-xlsr-53",
+                 wav2vec_model="facebook/wav2vec2-large-960h-lv60-self",
                  bert_model="nlptown/bert-base-multilingual-uncased-sentiment"):
-        
-        try:
-            self.processor = Wav2Vec2Processor.from_pretrained(wav2vec_model)
-            self.wav2vec_model = Wav2Vec2ForCTC.from_pretrained(wav2vec_model)
-        except Exception as e:
-            print(f"Erreur avec le modele, on essair")
-            wav2vec_model = "facebook/wav2vec2-large-960h-lv60-self"
-            self.processor = Wav2Vec2Processor.from_pretrained(wav2vec_model)
-            self.wav2vec_model = Wav2Vec2ForCTC.from_pretrained(wav2vec_model)
-        
         
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
