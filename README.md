@@ -32,6 +32,12 @@ python app.py
 4. Choisir le mode (Court/Long)
 5. Cliquer "Analyser"
 
+## Utilisation AP1
+
+1. Lancer `python api.py`
+2. Accéder à l'API sur (http://localhost:8000)
+3. Accéder à http://localhost:8000/docs pour tester l'API et voir la documentation
+
 ## Résultats
 
 - **Transcription** : Texte converti depuis l'audio
