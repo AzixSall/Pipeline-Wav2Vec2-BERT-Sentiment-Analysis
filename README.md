@@ -32,7 +32,7 @@ python app.py
 4. Choisir le mode (Court/Long)
 5. Cliquer "Analyser"
 
-## Utilisation AP1
+## Utilisation API
 
 1. Lancer `python api.py`
 2. Accéder à l'API sur (http://localhost:8000)
